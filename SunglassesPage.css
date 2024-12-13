@@ -1,0 +1,84 @@
+.sunglasses-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Optional: Add a background color for visual appeal */
+}
+
+.sunglasses-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Add a consistent gap between items */
+}
+
+.sunglass-card {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Three items per row with space between */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* Add rounded corners for a modern look */
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Slight shadow for a card effect */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Add smooth transitions for hover effects */
+}
+
+.sunglass-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* Rounded corners on images for a smoother design */
+    margin-bottom: 10px;
+}
+
+.sunglass-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sunglass-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .sunglass-card {
+        flex: 1 1 calc(50% - 20px);
+        /* Two items per row on tablet screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .sunglass-card {
+        flex: 1 1 100%;
+        /* Full width on small screens */
+    }
+}

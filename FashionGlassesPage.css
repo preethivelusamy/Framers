@@ -1,0 +1,42 @@
+.fashion-glasses-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.fashion-glasses-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.fashion-glass-card {
+    width: calc(33.333% - 20px); /* Three items per row with space */
+    margin-bottom: 20px; /* Space between rows */
+    border: 1px solid #ccc; /* Optional: Border for visual separation */
+    padding: 15px; /* Increased padding for better spacing */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    text-align: center; /* Center align text */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.fashion-glass-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.fashion-glass-card img {
+    max-width: 100%; /* Make sure images fit within the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.fashion-glass-card h2 {
+    font-size: 1.25rem; /* Adjust heading size */
+    margin: 10px 0; /* Space above and below heading */
+}
+
+.fashion-glass-card p {
+    margin: 5px 0; /* Space between paragraphs */
+    color: #555; /* Slightly darker text for description */
+}

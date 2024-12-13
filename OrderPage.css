@@ -1,0 +1,21 @@
+.order-page {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(204, 235, 211);
+}
+
+.order-details img {
+    width: 200px;
+}
+
+.order-details h2 {
+    margin: 10px 0;
+}
+
+.place-order-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
